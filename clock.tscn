@@ -1,4 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://bnc8d311lsy0t"]
+[gd_scene load_steps=4 format=3 uid="uid://bnc8d311lsy0t"]
+
+[ext_resource type="Script" path="res://clock.gd" id="1_yolyh"]
 
 [sub_resource type="Gradient" id="Gradient_up2xu"]
 offsets = PackedFloat32Array(0.98, 1)
@@ -14,6 +16,11 @@ fill_to = Vector2(1, 0.5)
 
 [node name="Clock" type="Node2D"]
 position = Vector2(576, 324)
+script = ExtResource("1_yolyh")
+time_scale = 100.0
+start_time = 1
+start_hour = 11
+start_minute = 3123123
 
 [node name="Face" type="Sprite2D" parent="."]
 texture = SubResource("GradientTexture2D_i5i16")
